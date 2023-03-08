@@ -80,7 +80,7 @@ spring:
   datasource:
     schema: classpath*:db/mysql/schema.sql
     data: classpath*:db/mysql/data.sql
-    url: url: jdbc:mysql://mysql-petclinic-18e678.mysql.database.azure.com:3306/petclinic?useSSL=true
+    url: jdbc:mysql://mysql-petclinic-18e678.mysql.database.azure.com:3306/petclinic?useSSL=true
     username: myadmin
     password: myadmin-password
     initialization-mode: ALWAYS
