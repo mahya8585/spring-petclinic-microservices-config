@@ -75,6 +75,11 @@ spring:
   config:
     activate:
       on-profile: mysql
+        jms:
+          servicebus:
+            connection-string: ${spring.jms.servicebus.connection-string}
+            idle-timeout: 60000
+            pricing-tier: premium
   sql.init.mode: always
   sql.init.platform: mysql
   datasource:
