@@ -101,7 +101,7 @@ spring:
               endpoint: https://kv-petclinic-18e678.vault.azure.net/
               credential.managed-identity-enabled: true
   kafka:
-    bootstrap-servers: sb-petclinic-18e678.servicebus.windows.net:9093
+    bootstrap-servers: evhns-petclinic-18e678.servicebus.windows.net:9093
     client-id: first-service
     group-id: $Default
     properties:
