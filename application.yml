@@ -91,14 +91,12 @@ spring:
     username: myadmin@mysql-petclinic-18e678
     password: myadmin-password
     initialization-mode: ALWAYS
-
-
-cloud:
-  azure:
-    keyvault:
-      secret:
-        property-source-enabled: true
-        property-sources:
-          - name: key-vault-property-source-1
-            endpoint: https://kv-petclinic-18e678.vault.azure.net/
-            credential.managed-identity-enabled: true
+  cloud:
+    azure:
+      keyvault:
+        secret:
+          property-source-enabled: true
+          property-sources:
+            - name: key-vault-property-source-1
+              endpoint: https://kv-petclinic-18e678.vault.azure.net/
+              credential.managed-identity-enabled: true
