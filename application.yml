@@ -81,6 +81,19 @@ spring:
     schema: classpath*:db/mysql/schema.sql
     data: classpath*:db/mysql/data.sql
     url: jdbc:mysql://mysql-petclinic-18e678.mysql.database.azure.com:3306/petclinic?useSSL=true
-    username: myadmin
+    # username: myadmin
+    # password: myadmin-password
+    username: myadmin@mysql-petclinic-18e678
     password: myadmin-password
     initialization-mode: ALWAYS
+
+
+cloud:
+  azure:
+    keyvault:
+      secret:
+        property-source-enabled: true
+        property-sources:
+          - name: key-vault-property-source-1
+            endpoint: https://kv-petclinic-18e678.vault.azure.net/
+            credential.managed-identity-enabled: true
